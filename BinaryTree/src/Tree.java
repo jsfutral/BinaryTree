@@ -1,5 +1,5 @@
 /**
- * 
+ * Defines the Tree class
  */
 
 
@@ -98,7 +98,6 @@ public class Tree {
 	
 	// remove a node from a tree
 	public boolean remove (Node n) {
-		Node temp = null; 
 		
 		// tree is empty
 		if (root == null) {
@@ -197,9 +196,12 @@ public class Tree {
 		return null;
 	}
 	
-
+	public void inOrder() {
+		inOrder(root);
+		System.out.print('\n');
+	}
 	// prints out all elements in increasing order
-	public void inOrder ( Node n ) {
+	private void inOrder ( Node n ) {
 		if (n.left != null)
 			inOrder( n.left );
 		System.out.print("" + n.data +  ' ');

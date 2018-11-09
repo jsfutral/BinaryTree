@@ -1,5 +1,5 @@
 /**
- * 
+ * Defines the Node class
  */
 
 /**
