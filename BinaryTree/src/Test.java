@@ -12,11 +12,19 @@ public class Test {
 		tree.insert(4);
 
 		
-		System.out.println(tree.search(1));
-		System.out.println(tree.search(2));
-		System.out.println(tree.search(3));
-		System.out.println(tree.search(4));
-		System.out.println(tree.search(5));
+		System.out.println(tree.search(3).successor().data);
+		System.out.println(tree.findParent(2).data);
+
+		tree.inOrder(tree.root);
+		System.out.println();
+		tree.remove(4);
+		tree.inOrder(tree.root);
+		System.out.println();
+		tree.remove(5);
+		tree.remove(2);
+		tree.inOrder(tree.root);
+		System.out.println();
+
 	}
 
 }
